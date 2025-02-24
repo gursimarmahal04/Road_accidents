@@ -1,9 +1,10 @@
---Accidents grouped by speed limits
+--Accidents grouped by speed limits and severity level
 
-SELECT speed_limit,COUNT(*)
+SELECT speed_limit,accident_severity,COUNT(*)
 FROM road_accidents_stagging
-GROUP BY 1
-ORDER BY 2 DESC;
+GROUP BY 1,2
+ORDER by 1 DESC,3 DESC;
+
 
 --Relationship between road surface conditions and accident count
 

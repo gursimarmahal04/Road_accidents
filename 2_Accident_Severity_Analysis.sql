@@ -14,7 +14,8 @@ SELECT weather_conditions,
 FROM 
     road_accidents_stagging
 GROUP BY 1,2
-ORDER BY 1,4 DESC
+ORDER BY 1,4 DESC;
+
 
 --Severity distribution across different road surface types.
 
@@ -25,4 +26,4 @@ SELECT road_surface_conditions,
 FROM 
     road_accidents_stagging
 GROUP BY 1,2
-ORDER BY 1,4 DESC
+ORDER BY 1,4 DESC;

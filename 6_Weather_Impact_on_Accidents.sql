@@ -1,12 +1,3 @@
---Accidents categorized by weather conditions
-
-SELECT 
-    weather_conditions, 
-    COUNT(*) AS accident_count,
-    ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(), 2) AS percentage
-FROM road_accidents_stagging
-GROUP BY weather_conditions
-ORDER BY accident_count DESC;
 
 --Comparing accident counts in clear vs. adverse weather conditions.
 
@@ -19,4 +10,4 @@ SELECT
     ROUND(COUNT(*) * 100 / SUM(COUNT(*)) OVER(),2)
 FROM road_accidents_stagging
 GROUP BY Weather_catagory
-ORDER BY Accident_Count
+ORDER BY Accident_Count;

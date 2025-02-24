@@ -23,7 +23,8 @@ LIMIT 10;
 SELECT junction_control,junction_detail,count(*)
 FROM road_accidents_stagging
 GROUP BY 1,2
-ORDER BY 3 DESC;
+ORDER BY 3 DESC
+LIMIT 10;
 
 --Mapping high-risk accident zones using latitude and longitude
 
